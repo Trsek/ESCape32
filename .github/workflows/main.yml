@@ -19,12 +19,11 @@ jobs:
 
     - name: Set up environment
       run: |
-        sudo apt-get update
-        sudo apt-get install -y cmake
-        sudo apt-get install -y gcc-arm-none-eabi
-        sudo apt-get install -y binutils-arm-none-eabi
-        sudo apt-get install -y libnewlib-arm-none-eabi
-        sudo apt-get install -y libopencm3-dev
+        sudo apt update
+        sudo apt install -y cmake
+        sudo apt install -y gcc-arm-none-eabi
+        sudo apt install -y binutils-arm-none-eabi
+        sudo apt install -y libnewlib-arm-none-eabi
 
     - name: Clone libopencm3 repository
       run: git clone https://github.com/libopencm3/libopencm3.git
